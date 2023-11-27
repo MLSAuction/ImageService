@@ -1,6 +1,6 @@
-﻿namespace ServiceTemplate.Models
+﻿namespace ImageService.Models
 {
-    public class ExampleDTO
+    public class ImageDTO
     {
         public int Id { get; set; }
         public DateTime Time { get; set; }
