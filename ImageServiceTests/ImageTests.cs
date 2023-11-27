@@ -1,6 +1,6 @@
-namespace ServiceTemplateTests
+namespace ImageServiceTests
 {
-    public class ServiceTests
+    public class ImageTests
     {
         [SetUp]
         public void Setup()

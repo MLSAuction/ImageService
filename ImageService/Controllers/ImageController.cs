@@ -1,15 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ServiceTemplate.Repositories;
+using ImageService.Repositories;
 
-namespace ServiceTemplate.Controllers
+namespace ImageService.Controllers
 {
-    public class ServiceController : Controller
+    public class ImageController : Controller
     {
         private readonly ILogger _logger;
         private readonly IConfiguration _configuration;
-        private readonly ServiceRepository _repository;
+        private readonly ImageRepository _repository;
 
-        ServiceController (ILogger logger, IConfiguration configuration, ServiceRepository repository)
+        ImageController (ILogger logger, IConfiguration configuration, ImageRepository repository)
         {
             _logger = logger;
             _configuration = configuration;
