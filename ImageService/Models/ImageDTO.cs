@@ -2,7 +2,7 @@
 {
     public class ImageDTO
     {
-        public int Id { get; set; }
-        public DateTime Time { get; set; }
+        public int ImageId { get; set; }
+        public string Image { get; set; }
     }
 }
