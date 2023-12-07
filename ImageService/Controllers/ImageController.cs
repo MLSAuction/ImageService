@@ -18,6 +18,24 @@ namespace ImageService.Controllers
             _configuration = configuration;
             _repository = repository;
         }
+        
+        [HttpGet("{id}")]
+        public IActionResult GetImage(int id)
+        {
+
+            ImageDTO image = _repository.GetImage(id);
+
+            if (image == null)
+            {
+                return NotFound(); // Return 404 if image is not found
+            }
+
+            _logger.LogInformation($"Image {image.ImageId} Retrieved ");
+
+            return Ok(image);
+        }
+
+
 
         [HttpPost, DisableRequestSizeLimit]
         public IActionResult UploadImage()
