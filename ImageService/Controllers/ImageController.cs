@@ -69,7 +69,7 @@ namespace ImageService.Controllers
                 return StatusCode(500, ex.Message);
             }
             
-            return Ok();
+            return Ok($"{imageId} Deleted Succesfully");
         }
     }
 }
