@@ -80,8 +80,8 @@ namespace ImageServiceTests
             var result = _imageController.Delete(validImageId);
 
             // Assert
-            Assert.IsInstanceOf<OkResult>(result);
-            var okResult = (OkResult)result;
+            Assert.IsInstanceOf<OkObjectResult>(result);
+            var okResult = (OkObjectResult)result;
             Assert.AreEqual(200, okResult.StatusCode);
 
             // Ensure that DeleteImage method was called with the correct imageId
